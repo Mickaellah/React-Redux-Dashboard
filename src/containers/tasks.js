@@ -1,4 +1,3 @@
-// const redux = require('redux');
 import React from 'react';
 import {connect} from 'react-redux';
 import Tasks from '../components/Tasks';
