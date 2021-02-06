@@ -1,16 +1,13 @@
-export function EditOrders(orders) {
+import state from "../state"
+
+export function EditOrders(state) {
     return {
         type: "UPDATE_ORDERS",
-        payload: orders,
+        payload: state.orders,
     }
 }
 
-export default function ordersReducer(orders = {
-    id: 0,
-    orderDate: "",
-    orderTime: "",
-    amount: ""
-}, action) {
+export default function ordersReducer(orders = [...state.orders], action) {
     switch(action.type) {
         case "UPDATE_ORDERS":
             return {

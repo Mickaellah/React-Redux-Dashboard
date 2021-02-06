@@ -1,15 +1,13 @@
-export function UpdateTasks(tasks) {
+import state from "../state"
+
+export function UpdateTasks(state) {
     return {
         type: "UPDATE_TASKS",
-        payload: tasks
+        payload: state.tasks
     }
 }
 
-export default function updateTasksReducer(tasks = {
-    id: 0,
-    task: "",
-    date: ""
-}, action) {
+export default function updateTasksReducer(tasks = [...state.tasks], action) {
     switch(action.type) {
         case "UPDATE_TASKS":
             return {

@@ -1,6 +1,7 @@
 import React from "react";
 import TaskItem from "./TaskItem";
-function TasksPanel(props) {
+function TasksPanel({tasks}) {
+  console.log(tasks);
   return (  <div className="panel panel-default">
                 <div className="panel-heading">
                     <h3 className="panel-title"><i className="fa fa-clock-o fa-fw"></i> Tasks Panel</h3>
@@ -8,7 +9,7 @@ function TasksPanel(props) {
                 <div className="panel-body">
                     <div className="list-group">
                       {
-                        props.tasks.map(function (t,i) {
+                        tasks.map(function (t,i) {
                           return <TaskItem key={i} task={t} />;
                         })
                       }

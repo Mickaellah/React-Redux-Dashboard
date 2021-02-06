@@ -1,7 +1,7 @@
 export function AddNewComments(comment = 1) {
     return {
         type: "ADD_NEW_COMMENTS",
-        payload: comment,
+        payload: comment
     }
 }
 

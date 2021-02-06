@@ -1,15 +1,15 @@
-export function AddNewOrders(order = 1) {
+export function AddNewOrders(newOrders = 1) {
     return {
         type: "ADD_NEW_ORDERS",
-        payload: order,
+        payload: newOrders,
     }
 }
 
-export default function newOrdersReducer(order = 124, action) {
+export default function newOrdersReducer(newOrders = 124, action) {
     switch(action.type) {
         case "ADD_NEW_ORDERS":
-            return order + action.payload
+            return newOrders + action.payload
         default: 
-            return order
+            return newOrders
     }
 }
