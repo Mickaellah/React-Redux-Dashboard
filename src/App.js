@@ -1,6 +1,4 @@
 import React from "react";
-// import TopNav from "./components/TopNav";
-import PropTypes from "prop-types";
 import AreaChart from "./components/AreaChart";
 import DonutChart from "./components/DonutChart";
 import SideNav from "./components/SideNav";
@@ -58,17 +56,5 @@ function App() {
 
   );
 }
-
-App.propTypes = {
-  dateTime: PropTypes.string.isRequired,
-  newComments: PropTypes.number.isRequired,
-  newTasks: PropTypes.number.isRequired,
-  newOrders: PropTypes.number.isRequired,
-  tickets: PropTypes.number.isRequired,
-  orders: PropTypes.array.isRequired,
-  taskItem: PropTypes.string.isRequired,
-  messages: PropTypes.array,
-  tasks: PropTypes.array
-};
 
 export default App;

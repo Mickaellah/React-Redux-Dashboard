@@ -2,7 +2,6 @@ import React from "react";
 import MessagePreview from "./MessagePreview";
 
 function TopNav({messages}) {
-    console.log(messages);
   return (
     <ul className="nav navbar-right top-nav">
       <li className="dropdown">

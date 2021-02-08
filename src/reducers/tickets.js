@@ -5,7 +5,7 @@ export function AddTickets(ticket = 1) {
     }
 }
 
-export default function ticketsReducer(ticket = 13, action) {
+export default function ticketsReducer(ticket = 0, action) {
     switch(action.type) {
         case "ADD_TICKETS":
             return ticket + action.payload

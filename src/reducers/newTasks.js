@@ -5,7 +5,7 @@ export function AddNewTasks(task = 1) {
     }
 }
 
-export default function newTasksReducer(task = 12, action) {
+export default function newTasksReducer(task = 0, action) {
     switch(action.type) {
         case "ADD_NEW_TASKS":
             return task + action.payload

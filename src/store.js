@@ -4,6 +4,6 @@ import reducers from './reducers/index';
 
 const {createStore} = redux;
 
-const store = createStore(reducers);
+const store = createStore(reducers, state);
 
 export default store;

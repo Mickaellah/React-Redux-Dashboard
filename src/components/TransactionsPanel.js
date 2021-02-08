@@ -2,7 +2,6 @@ import React from "react";
 import TransactionRow from "./TransactionRow";
 
 function TransactionsPanel({orders}) {
-    console.log(orders);
   return ( 
     <div className="panel panel-default">
         <div className="panel-heading">

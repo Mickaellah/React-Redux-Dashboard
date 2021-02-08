@@ -5,7 +5,7 @@ export function AddNewComments(comment = 1) {
     }
 }
 
-export default function newCommentsReducer(comment = 23, action) {
+export default function newCommentsReducer(comment = 0, action) {
     switch(action.type) {
         case "ADD_NEW_COMMENTS":
             return comment + action.payload
